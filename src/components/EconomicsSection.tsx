@@ -6,14 +6,13 @@ const EconomicsSection = () => {
       <div className="container mx-auto px-8">
         {/* Заголовок */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-yalta-dark mb-4">
+          <h2 className="text-4xl font-bold text-yalta-brown mb-4 font-merriweather">
             ЭКОНОМИКА И ТУРИЗМ
           </h2>
-          <div className="w-24 h-1 bg-yalta-terracotta mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Туристические показатели */}
+          {/* Туристический поток */}
           <div className="bg-white p-8 rounded-2xl shadow-lg">
             <div className="flex items-center mb-6">
               <Icon
@@ -21,37 +20,37 @@ const EconomicsSection = () => {
                 size={32}
                 className="text-yalta-terracotta mr-4"
               />
-              <h3 className="text-2xl font-bold text-yalta-dark">
+              <h3 className="text-2xl font-bold text-yalta-brown">
                 Туристический поток
               </h3>
             </div>
 
-            {/* Основная статистика */}
             <div className="text-center mb-8">
               <div className="text-5xl font-bold text-yalta-terracotta mb-2">
-                1.5M+
+                1.5 млн
               </div>
               <p className="text-yalta-medium">туристов в год</p>
             </div>
 
-            {/* Дополнительные показатели */}
             <div className="space-y-4">
               <div className="flex justify-between items-center p-4 bg-yalta-light-cream rounded-lg">
-                <span className="text-yalta-dark">Пик сезона</span>
-                <span className="font-bold text-yalta-terracotta">
-                  Май - Октябрь
+                <span className="text-yalta-brown">200+</span>
+                <span className="font-bold text-yalta-brown">
+                  объектов размещения
                 </span>
               </div>
               <div className="flex justify-between items-center p-4 bg-yalta-light-cream rounded-lg">
-                <span className="text-yalta-dark">Санатории и отели</span>
-                <span className="font-bold text-yalta-terracotta">200+</span>
+                <span className="text-yalta-brown">50+</span>
+                <span className="font-bold text-yalta-brown">
+                  достопримечательностей
+                </span>
               </div>
             </div>
           </div>
 
           {/* Основные отрасли */}
           <div className="space-y-6">
-            {/* Туризм */}
+            {/* Туризм и рекреация */}
             <div className="bg-yalta-terracotta p-6 rounded-xl text-white">
               <div className="flex items-center mb-3">
                 <Icon name="MapPin" size={24} className="mr-3" />
@@ -69,7 +68,7 @@ const EconomicsSection = () => {
                 <h4 className="text-xl font-bold">Виноделие</h4>
               </div>
               <p className="text-white opacity-90">
-                Знаменитые винодельни и дегустации
+                Знаменитые винодельни региона
               </p>
             </div>
 
