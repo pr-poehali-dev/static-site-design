@@ -2,69 +2,86 @@ import Icon from "@/components/ui/icon";
 
 const EconomicsSection = () => {
   return (
-    <section className="py-20 bg-yalta-light-cream">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-yalta-dark text-center mb-16">
-          ЭКОНОМИКА И ТУРИЗМ
-        </h2>
+    <section className="py-20 bg-yalta-cream">
+      <div className="container mx-auto px-8">
+        {/* Заголовок */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-yalta-dark mb-4">
+            ЭКОНОМИКА И ТУРИЗМ
+          </h2>
+          <div className="w-24 h-1 bg-yalta-terracotta mx-auto"></div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Туристический поток */}
+          {/* Туристические показатели */}
           <div className="bg-white p-8 rounded-2xl shadow-lg">
-            <h3 className="text-2xl font-bold text-yalta-dark mb-6">
-              Туристический поток
-            </h3>
-
             <div className="flex items-center mb-6">
               <Icon
                 name="Users"
                 size={32}
                 className="text-yalta-terracotta mr-4"
               />
-              <div>
-                <div className="text-3xl font-bold text-yalta-dark">
-                  1.5+ млн
-                </div>
-                <p className="text-yalta-medium">туристов в год</p>
-              </div>
+              <h3 className="text-2xl font-bold text-yalta-dark">
+                Туристический поток
+              </h3>
             </div>
 
-            <div className="space-y-4">
-              <div className="flex justify-between items-center p-3 bg-yalta-light-cream rounded-lg">
-                <span className="text-yalta-dark">Летний сезон</span>
-                <span className="font-bold text-yalta-terracotta">200+</span>
+            {/* Основная статистика */}
+            <div className="text-center mb-8">
+              <div className="text-5xl font-bold text-yalta-terracotta mb-2">
+                1.5M+
               </div>
-              <div className="flex justify-between items-center p-3 bg-yalta-light-cream rounded-lg">
-                <span className="text-yalta-dark">Гостиниц и санаториев</span>
-                <span className="font-bold text-yalta-terracotta">50+</span>
+              <p className="text-yalta-medium">туристов в год</p>
+            </div>
+
+            {/* Дополнительные показатели */}
+            <div className="space-y-4">
+              <div className="flex justify-between items-center p-4 bg-yalta-light-cream rounded-lg">
+                <span className="text-yalta-dark">Пик сезона</span>
+                <span className="font-bold text-yalta-terracotta">
+                  Май - Октябрь
+                </span>
+              </div>
+              <div className="flex justify-between items-center p-4 bg-yalta-light-cream rounded-lg">
+                <span className="text-yalta-dark">Санатории и отели</span>
+                <span className="font-bold text-yalta-terracotta">200+</span>
               </div>
             </div>
           </div>
 
           {/* Основные отрасли */}
           <div className="space-y-6">
+            {/* Туризм */}
             <div className="bg-yalta-terracotta p-6 rounded-xl text-white">
-              <h4 className="text-xl font-bold mb-3">Туризм и рекреация</h4>
-              <p className="text-sm opacity-90">
+              <div className="flex items-center mb-3">
+                <Icon name="MapPin" size={24} className="mr-3" />
+                <h4 className="text-xl font-bold">Туризм и рекреация</h4>
+              </div>
+              <p className="text-white opacity-90">
                 Ведущая отрасль экономики города
               </p>
-              <Icon name="Palmtree" size={32} className="mt-3" />
             </div>
 
+            {/* Виноделие */}
             <div className="bg-yalta-warm-brown p-6 rounded-xl text-white">
-              <h4 className="text-xl font-bold mb-3">Виноделие</h4>
-              <p className="text-sm opacity-90">
+              <div className="flex items-center mb-3">
+                <Icon name="Wine" size={24} className="mr-3" />
+                <h4 className="text-xl font-bold">Виноделие</h4>
+              </div>
+              <p className="text-white opacity-90">
                 Знаменитые винодельни и дегустации
               </p>
-              <Icon name="Wine" size={32} className="mt-3" />
             </div>
 
+            {/* Сельское хозяйство */}
             <div className="bg-yalta-medium p-6 rounded-xl text-white">
-              <h4 className="text-xl font-bold mb-3">Сельское хозяйство</h4>
-              <p className="text-sm opacity-90">
-                Субтропическое садоводство и виноградарство
+              <div className="flex items-center mb-3">
+                <Icon name="Apple" size={24} className="mr-3" />
+                <h4 className="text-xl font-bold">Сельское хозяйство</h4>
+              </div>
+              <p className="text-white opacity-90">
+                Субтропическое садоводство
               </p>
-              <Icon name="Apple" size={32} className="mt-3" />
             </div>
           </div>
         </div>
